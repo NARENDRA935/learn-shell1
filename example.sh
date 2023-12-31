@@ -5,7 +5,7 @@ length(){
   do
   num =$((num/10))
   len=$((len+1))
-done
+  done
 }
 echo "$len"
 length
