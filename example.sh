@@ -6,6 +6,6 @@ length(){
   num =$((num/10))
   len=$((len+1))
   done
+  echo "$len"
 }
-echo "$len"
 length
