@@ -6,4 +6,4 @@ do
   fact=$((fact * num))
   a=$((num-1))
 done
-echo $fact
+echo "$fact"
