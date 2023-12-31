@@ -1,5 +1,5 @@
 length() {
-    read num
+    num =$1
     len=0
     while [ $num -gt 0 ]
     do
@@ -8,5 +8,24 @@ length() {
     done
     echo $len
 }
-length $num
+armstrong(){
+  num=$1
+  sum=0
+  len=$(length $num)
+  temp=$num
+  while[$num -gt 0]
+  do
+    digit=$((temp % 10))
+    sum=$((sum+digit**len))
+    temp=$((temp/10))
+  done
+  if [$sum   -eq $num]
+  then
+    echo "$num is a armstrong"
+  else
+    echo "$num is not armstrong"
+}
+echo "enter the number"
+read num
+armstrong $num
 
