@@ -19,7 +19,7 @@ armstrong(){
          sum=$((sum + digit**len))
          temp=$((temp/10))
      done
-  if [$sum   -eq $num]
+  if [ $sum -eq $num ]
   then
     echo "$num is a armstrong"
   else
