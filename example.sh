@@ -8,5 +8,5 @@ length() {
     done
     echo $len
 }
-
+length $num
 
