@@ -1,8 +1,9 @@
-echo -n "enter the number"
-num=$1
+echo "factorial"
+a=5
 fact=1
-for((i=1;i<=num;i++))
+while [ $a>1 ]
 {
-  fact=$((fact * i))
+  fact=$((fact * $a))
+  a=$((a-1))
 }
 echo "$fact"
