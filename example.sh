@@ -24,6 +24,7 @@ armstrong(){
     echo "$num is a armstrong"
   else
     echo "$num is not armstrong"
+  fi
 }
 echo "enter the number"
 read num
