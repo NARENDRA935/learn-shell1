@@ -13,12 +13,12 @@ armstrong(){
   sum=0
   len=$(length $num)
   temp=$num
-  while[$temp -gt 0]
-  do
-    digit=$((temp % 10))
-    sum=$((sum + digit**len))
-    temp=$((temp/10))
-  done
+ while [ $temp -gt 0 ]
+     do
+         digit=$((temp % 10))
+         sum=$((sum + digit**len))
+         temp=$((temp/10))
+     done
   if [$sum   -eq $num]
   then
     echo "$num is a armstrong"
