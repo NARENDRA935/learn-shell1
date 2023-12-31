@@ -1,2 +1,8 @@
-f=1
-for k in {1..10};do f=$[$f * $k];done;echo "$f"
+num=$1
+fact=1
+for((i=1; i<=$num; i++))
+do
+        let fact=fact*i
+done
+
+echo "Factorial is $fact"
