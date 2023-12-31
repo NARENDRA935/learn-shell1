@@ -1,6 +1,3 @@
-add(){
-  num1=$1
-  num2=$2
-  echo "addition of ${num1} and ${num2} is $(($num1+$num2))"
-}
-add 10 20
+a=10
+b=20
+echo "additon $(($a+$b))"
