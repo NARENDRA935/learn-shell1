@@ -15,8 +15,8 @@ armstrong(){
   temp=$num
   while[$num -gt 0]
   do
-    digit=$((temp % 10))
-    sum=$((sum+digit**len))
+    digit=$((temp%10))
+    sum=$((sum + digit**len))
     temp=$((temp/10))
   done
   if [$sum   -eq $num]
