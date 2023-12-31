@@ -3,4 +3,4 @@ add(){
   num2=$2
   echo "addition of ${num1} and ${num2} is $(($num1+$num2))"
 }
-add
+add 10 20
