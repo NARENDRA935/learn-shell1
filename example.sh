@@ -6,3 +6,4 @@ length(){
   len=$((len+1))
 }
 echo "$len"
+length
