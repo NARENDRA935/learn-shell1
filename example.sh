@@ -1,7 +1,8 @@
 echo "enter the number"
-num=5
+num=$1
+fact =1
 for((i=2;i<=num;i++))
 {
-  num=$((num*i))
+  fact=$((fact * i))
 }
-echo "$num"
+echo "$fact"
