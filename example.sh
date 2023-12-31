@@ -8,4 +8,3 @@ length(){
   done
   echo "$len"
 }
-length
