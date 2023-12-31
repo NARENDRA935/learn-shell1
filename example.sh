@@ -1,4 +1,5 @@
 
+
 length() {
     num=$1
     len=0
@@ -9,4 +10,3 @@ length() {
     done
     echo $len
 }
-length $num
