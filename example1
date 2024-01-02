@@ -4,7 +4,7 @@ read num
 count=1
 for((i=2;i<=$num/2;i++))
 {
-   if [ $num % i ]
+   if [ $((num % i)) ]
    then
    count=$((count + 1))
    fi
