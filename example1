@@ -10,4 +10,4 @@ while [$num -gt 0]
  echo $len
 
 }
-length
+length $num
