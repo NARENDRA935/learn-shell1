@@ -8,7 +8,7 @@ while [$num -gt 0 ]
        sum=$((sum+digit**3))
        num=$((num/10))
    done
-if [ $sum -eq $temp]
+if [ $sum -eq $temp ]
 then
     echo "$num is armstrong"
 else
