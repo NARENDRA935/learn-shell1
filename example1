@@ -1,9 +1,11 @@
-echo "enter the file name"
+
+
+echo "Enter the file name:"
 read filename
-if [ -e "$filename" ]
-then
-    line=$(wc -l < "$filename")
-    echo "no of line $filename:$line"
+
+if [ -e "$filename" ]; then
+    lines=$(wc -l < "$filename")
+    echo "Number of lines in $filename: $lines"
 else
-    echo "file dose not exists"
+    echo "File does not exist."
 fi
