@@ -10,8 +10,8 @@ while [$num -gt 0 ]
    done
 if [ $sum -eq $temp ]
 then
-    echo "$num is armstrong"
+    echo "$temp is armstrong"
 else
-    echo "$num is not armstrong"
+    echo "$temp is not armstrong"
 fi
 
