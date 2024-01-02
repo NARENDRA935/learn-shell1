@@ -2,7 +2,7 @@ echo "enter the file name"
 read filename
 if [ -e "$filename" ]
 then
-    line =$(wc -l < "$filename")
+    line=$(wc -l < "$filename")
     echo "no of line $filename:$line"
 else
     echo "file dose not exists"
