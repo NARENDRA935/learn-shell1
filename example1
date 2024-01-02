@@ -1,6 +1,6 @@
 lenght(){
 read num
-len=1
+len=0
 while [$num -gt 0]
 
  do
