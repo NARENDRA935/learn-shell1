@@ -1,9 +1,9 @@
-
 echo "enter the file name"
 read filename
-if [ -e $filename ]
+if [ -e "$filename" ]
 then
-    echo "file exits!"
+    line =$(wc -l < "$filename")
+    echo "no of line $filename:$line"
 else
     echo "file dose not exists"
 fi
