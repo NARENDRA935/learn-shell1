@@ -1,4 +1,4 @@
-lenght(){
+lenght() {
 read num
 len=0
 while [$num -gt 0]
