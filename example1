@@ -1,17 +1,21 @@
-echo "enter the number"
+
+echo "Enter the number"
 read num
-sum=o
+sum=0
 temp=$num
-while [$num -gt 0 ]
-   do
-       digit=$((num%10))
-       sum=$((sum + digit ** 3))
-       num=$((num/10))
-   done
+
+while [ $num -gt 0 ]
+do
+    digit=$((num % 10))
+    sum=$((sum + digit ** 3))
+    num=$((num / 10))
+done
+
 if [ $sum -eq $temp ]
 then
-    echo "$temp is armstrong"
+    echo "$temp is Armstrong"
 else
-    echo "$temp is not armstrong"
+    echo "$temp is not Armstrong"
 fi
+
 
