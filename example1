@@ -1,12 +1,17 @@
+echo "enter the number"
+read num
+sum=o
+temp=$num
+while [$num -gt 0 ]
+   do
+       digit=$((num%10))
+       sum=$((sum+digit**3))
+       num=$((num/10))
+   done
+if [ $sum -eq $temp]
+then
+    echo "$num is armstrong"
+else
+    echo "$num is not armstrong"
+fi
 
-length() {
-    read num
-    len=0
-    while [ $num -gt 0 ]
-    do
-        num=$((num/10))
-        len=$((len+1))
-    done
-    echo $len
-}
-length
