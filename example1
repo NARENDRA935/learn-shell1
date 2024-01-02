@@ -2,14 +2,14 @@
 echo "Enter the number"
 read num
 count=1
-for((i=2;i<=$num/2;i++))
+for((i=1;i<=$num;i++))
 {
    if [ $((num % i)) ]
    then
    count=$((count + 1))
    fi
 }
-if [ $count -eq 1 ]
+if [ $count -eq 2 ]
 then
     echo "$num is prime"
 else
