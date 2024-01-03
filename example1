@@ -1,11 +1,8 @@
 
-
-echo "Enter the file name:"
-read filename
-
-if [ -e "$filename" ]; then
-    lines=$(wc -l < "$filename")
-    echo "Number of lines in $filename: $lines"
-else
-    echo "File does not exist."
-fi
+echo "enter the number"
+read -a numbers
+sum =0
+for num in  "${numbers[@]}";do
+sum=$((num + sum))
+done
+echo "sum of number:$sum"
