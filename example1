@@ -1,7 +1,7 @@
 
 echo "enter the number"
 read -a numbers
-sum =0
+sum=0
 for num in  "${numbers[@]}";do
 sum=$((num + sum))
 done
