@@ -1,6 +1,6 @@
-echo "read the 1to5"
-for num in {1..5};do
-  echo "$num"
+echo "print even numbers"
+count=2
+while [ $count -le 10 ]; do
+ echo "$count"
+ count=$((count + 2))
 done
-
-
