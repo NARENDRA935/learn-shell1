@@ -1,6 +1,4 @@
-echo "print even numbers"
-count=2
-while [ $count -le 10 ]; do
- echo "$count"
- count=$((count + 2))
+echo "print the even num"
+for ((i=1;i<=10;i+2)); do
+  echo "sum"
 done
