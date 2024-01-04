@@ -2,7 +2,7 @@
 echo "enter the fielname"
 read file_name
 if [ -r "$file_name" ] && [ -w "$file_name" ]
-  echo "you have read and write permisson for $file_name"
+  echo "you have read and write permisson for '$file_name'."
 else
-   echo "don't have read and write permission for $file_name"
+   echo "don't have read and write permission for '$file_name'."
 fi
