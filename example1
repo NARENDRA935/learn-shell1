@@ -1,8 +1,16 @@
 
-echo "enter the fielname"
-read file_name
-if [ -r "$file_name" ] && [ -w "$file_name" ]
-  echo "you have read and write permisson for '$file_name'."
+#!/bin/bash
+
+echo "Enter the filename:"
+read filename
+
+if [ -r "$filename" ] && [ -w "$filename" ]; then
+    echo "You have read and write permissions for '$filename'."
 else
-   echo "don't have read and write permission for '$file_name'."
+    echo "You do not have read and write permissions for '$filename'."
 fi
+
+
+
+
+
