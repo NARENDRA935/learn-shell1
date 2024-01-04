@@ -1,4 +1,5 @@
 echo "print the even num"
-for ((i=1;i<=10;i+2)); do
-  echo "sum"
+for i in {1..10};do
+if [ i%2  -eq 0 ]; then
+   echo "$i
 done
