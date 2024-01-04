@@ -1,5 +1,6 @@
 echo "print the even num"
 for i in {1..10};do
 if [ i%2  -eq 0 ]; then
-   echo "$i
+   echo "$i"
+fi
 done
