@@ -1,15 +1,6 @@
-
-echo "enter tne number1"
-read num1
-echo "enter the number2"
-read num2
-sum=$((num1 + num2))
-  echo "sum is $sum"
-if [ $((sum%2)) -eq 0 ]; then
-  echo "$sum is even"
-else
-  echo "$sum is odd"
-fi
-
+echo "read the 1to5"
+for num in {1..5};do
+  echo "$num"
+done
 
 
