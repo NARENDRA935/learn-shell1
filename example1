@@ -1,16 +1,14 @@
 
-#!/bin/bash
-
-echo "Enter the filename:"
-read filename
-
-if [ -r "$filename" ] && [ -w "$filename" ]; then
-    echo "You have read and write permissions for '$filename'."
+echo "enter tne number1"
+read num1
+echo "enter the number2"
+read num2
+sum=$((num1 + num2))
+  echo "sum is $sum"
+if [ $((sum%2)) -eq 0 ];then
+  echo "$sum is even"
 else
-    echo "You do not have read and write permissions for '$filename'."
-fi
-
-
+  echo "$sum is odd"
 
 
 
