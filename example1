@@ -1,16 +1,8 @@
-echo "enter the file_name"
+
+echo "enter the fielname"
 read file_name
-if [ -e "$file_name" ]; then
-   echo "$file_name file exists"
+if [ -r "$file_name" ] && [ -w "$file_name" ]
+  echo "you have read and write permisson for $file_name"
 else
-    echo "$file_name does not exists "
-fi
-
-
-echo "enter the year"
-read year
-if [ $((year % 4)) -eq 0 ] && [ $((year % 100)) -ne 0 -o $((year % 400)) -eq 0 ]; then
-   echo "$year is leap year"
-else
-   echo "$year is not leap year"
+  echo " do not have read and write permisson for $file_name"
 fi
