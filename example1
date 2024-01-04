@@ -1,7 +1,6 @@
-echo "enter the number"
-read num
-if [ $((num%2)) -eq 0 ]; then
-   echo "$num is even"
+echo "enter the file_name"
+read file_name
+if[ -e "$file_name" ]; then
+   echo "$file_name file exists"
 else
-   echo "$num is odd"
-fi
+    echo "file_name does not exists "
